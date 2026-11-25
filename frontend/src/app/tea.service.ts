@@ -19,7 +19,7 @@ export interface TeaSummary {
 @Injectable({ providedIn: 'root' })
 export class TeaService {
   private http = inject(HttpClient);
-  private api = 'http://localhost:5000/api/tea';
+  private api = 'https://tea-traker.onrender.com/api/tea';
 
   getEntries(month: number, year: number, search = ''): Observable<{ success: boolean; data: TeaEntry[] }> {
     const params = new HttpParams().set('month', month).set('year', year).set('search', search);
