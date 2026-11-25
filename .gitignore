@@ -1,0 +1,14 @@
+node_modules
+.dist
+dist
+.angular
+.env
+.env.*
+!.env.example
+coverage
+*.log
+.DS_Store
+
+
+node_modules*
+node_modules/
